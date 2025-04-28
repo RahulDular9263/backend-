@@ -25,13 +25,12 @@
         "wait-on": "^8.0.3"
     },
     "scripts": {
-        "start": "concurrently \"npm run react-start\" \"npm run electron\"\"node server.js\"",
-        "react-start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "electron": "wait-on http://localhost:3000 && electron .",
-        "dist": "npm run build && electron-builder"
+        "scripts": {
+  "build": "npm run build",
+  "start": "npm start",
+  "deploy": "netlify deploy"
+}
+
     },
     "eslintConfig": {
         "extends": [
